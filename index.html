@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VRB Secure Access</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>V.R.B. // <span>Vitalist Regulation Bureau</span></h1>
+  <nav>
+    <a href="database.html">DATABASE</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <div class="alert">
+    ⚠ CLASSIFIED ACCESS — VRB MONITORED NETWORK
+  </div>
+
+  <div class="card">
+    <h2>WELCOME, USER</h2>
+    <p>
+      You have accessed a restricted VRB endpoint via encoded signal (QR authorization).
+      All activity is logged.
+    </p>
+
+    <button onclick="enterDatabase()">ENTER DATABASE</button>
+  </div>
+
+</div>
+
+<script>
+function enterDatabase(){
+  window.location.href = "database.html";
+}
+</script>
+
+</body>
+</html>

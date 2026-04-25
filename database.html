@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VRB Database</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>V.R.B. // <span>DATABASE</span></h1>
+  <nav>
+    <a href="index.html">HOME</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>ACTIVE CASE FILES</h2>
+
+    <table>
+      <tr>
+        <th>CASE ID</th>
+        <th>ALIAS</th>
+        <th>THREAT</th>
+      </tr>
+
+      <tr onclick="openCase('4721')">
+        <td>VRB-4721</td>
+        <td>UNKNOWN</td>
+        <td class="danger">S-RANK</td>
+      </tr>
+
+      <tr onclick="openCase('9213')">
+        <td>VRB-9213</td>
+        <td>“Glass Phantom”</td>
+        <td class="danger">A-RANK</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</div>
+
+<script>
+function openCase(id){
+  window.location.href = "case.html?id=" + id;
+}
+</script>
+
+</body>
+</html>

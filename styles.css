@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0b0b0d;
+  color: #e5e5e5;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(to right, #111, #1a1a1f);
+  border-bottom: 2px solid crimson;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+header span {
+  color: crimson;
+}
+
+/* NAV */
+nav a {
+  color: #aaa;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* LAYOUT */
+.container {
+  padding: 30px;
+}
+
+/* ALERT */
+.alert {
+  border: 1px solid crimson;
+  background: rgba(220, 20, 60, 0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.card {
+  background: #121216;
+  border: 1px solid #2a2a2f;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* TEXT */
+.label {
+  font-size: 11px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.value {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.danger {
+  color: crimson;
+  font-weight: bold;
+}
+
+/* BUTTON */
+button {
+  background: crimson;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff2e5f;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px;
+  border-bottom: 1px solid #222;
+}
+
+tr:hover {
+  background: #1a1a1f;
+  cursor: pointer;
+}
