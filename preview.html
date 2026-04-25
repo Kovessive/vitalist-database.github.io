@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VRB Database Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #0b0b0d;
+      color: #e5e5e5;
+    }
+
+    header {
+      background: linear-gradient(to right, #111, #1a1a1f);
+      padding: 20px;
+      border-bottom: 2px solid crimson;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    header span {
+      color: crimson;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    .alert {
+      background: rgba(220, 20, 60, 0.1);
+      border: 1px solid crimson;
+      padding: 15px;
+      margin-bottom: 25px;
+    }
+
+    .alert strong {
+      color: crimson;
+    }
+
+    .card {
+      background: #121216;
+      border: 1px solid #2a2a2f;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .label {
+      font-size: 12px;
+      color: #888;
+      text-transform: uppercase;
+    }
+
+    .value {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .danger {
+      color: crimson;
+      font-weight: bold;
+    }
+
+    button {
+      background: crimson;
+      border: none;
+      padding: 12px 20px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    button:hover {
+      background: #ff2e5f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #666;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>V.R.B. // <span>Vitalist Regulation Bureau</span></h1>
+  <div>SECURE DATABASE</div>
+</header>
+
+<div class="container">
+
+  <div class="alert">
+    <strong>⚠ CLASSIFIED ACCESS</strong><br>
+    You are viewing restricted Vitalist-related data. Unauthorized use is punishable under federal law.
+  </div>
+
+  <div class="card">
+    <h2>WANTED SUBJECT PROFILE</h2>
+
+    <div class="grid">
+      <div>
+        <div class="label">Name / Alias</div>
+        <div class="value">UNKNOWN</div>
+
+        <div class="label">Status</div>
+        <div class="value danger">ACTIVE THREAT</div>
+
+        <div class="label">Threat Level</div>
+        <div class="value danger">S-RANK</div>
+      </div>
+
+      <div>
+        <div class="label">Last Seen</div>
+        <div class="value">REDACTED</div>
+
+        <div class="label">VRB Case ID</div>
+        <div class="value">VRB-██-4721</div>
+
+        <div class="label">Bounty</div>
+        <div class="value">$100,000,000</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Resonance Card Data</h2>
+
+    <div class="label">Card Suit</div>
+    <div class="value">SPADE</div>
+
+    <div class="label">Card Number</div>
+    <div class="value">UNKNOWN</div>
+
+    <div class="label">Ability</div>
+    <div class="value">[DATA CORRUPTED]</div>
+
+    <div class="label">Weapon Manifestation</div>
+    <div class="value">[RESTRICTED]</div>
+  </div>
+
+  <div class="card">
+    <h2>Advisory</h2>
+    <p class="danger">
+      Subject is considered extremely dangerous. Known to extract and utilize essence without restriction.
+      Do not engage without VRB authorization.
+    </p>
+
+    <button onclick="reportSightings()">REPORT SIGHTING</button>
+  </div>
+
+</div>
+
+<footer>
+  © Vitalist Regulation Bureau — Enforcement Division<br>
+  “Control the Essence. Preserve Humanity.”
+</footer>
+
+<script>
+  function reportSightings() {
+    alert("Report submitted to VRB.\n\nTracking initiated.");
+  }
+</script>
+
+</body>
+</html>
